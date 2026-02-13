@@ -1,0 +1,136 @@
+{
+  "project_name": "GitWorth - The Student GitHub Profile Analyzer",
+  "design_identity": {
+    "theme_name": "The Cyber-Dojo",
+    "core_concept": "A high-performance command center for students. It feels like a 'game HUD' for their career. Dark, precise, electrified.",
+    "emotional_tone": "Constructive, Gamified, High-Tech, Honest.",
+    "visual_style": "Dark Mode Only. High Contrast. Neon Accents on Deep Charcoal. Grid-based structures."
+  },
+  "typography": {
+    "font_family": {
+      "headings": "JetBrains Mono, monospace",
+      "body": "Manrope, sans-serif",
+      "code": "JetBrains Mono, monospace"
+    },
+    "installation_instructions": "Import fonts from Google Fonts: @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;700&family=Manrope:wght@300;400;500;600;700&display=swap'); Apply via index.css body selector.",
+    "usage_rules": {
+      "headings": "Uppercase, tracking-tight, font-bold. Use for Section Titles and Big Metrics.",
+      "body": "Regular weight, relaxed leading. Use for advice and descriptions.",
+      "labels": "Uppercase, tracking-widest, text-xs, font-medium, opacity-70."
+    }
+  },
+  "colors": {
+    "palette_strategy": "Archetype 7: Electric & Neon (Modified for Clarity)",
+    "background": {
+      "default": "#05050A",
+      "card": "#0A0A0F",
+      "overlay": "rgba(5, 5, 10, 0.8)"
+    },
+    "foreground": {
+      "default": "#EDEDED",
+      "muted": "#A1A1AA"
+    },
+    "brand_colors": {
+      "primary": "#CCFF00",
+      "primary_foreground": "#000000",
+      "secondary": "#3B82F6",
+      "accent": "#F43F5E",
+      "success": "#CCFF00",
+      "warning": "#F59E0B",
+      "error": "#EF4444"
+    },
+    "tailwind_config_extension": {
+      "colors": {
+        "background": "hsl(240 10% 4%)",
+        "foreground": "hsl(0 0% 98%)",
+        "card": "hsl(240 10% 6%)",
+        "card-foreground": "hsl(0 0% 98%)",
+        "popover": "hsl(240 10% 6%)",
+        "popover-foreground": "hsl(0 0% 98%)",
+        "primary": "hsl(72 100% 50%)",
+        "primary-foreground": "hsl(0 0% 0%)",
+        "secondary": "hsl(240 5% 20%)",
+        "secondary-foreground": "hsl(0 0% 98%)",
+        "muted": "hsl(240 5% 15%)",
+        "muted-foreground": "hsl(240 5% 65%)",
+        "accent": "hsl(240 5% 20%)",
+        "accent-foreground": "hsl(0 0% 98%)",
+        "destructive": "hsl(0 84% 60%)",
+        "destructive-foreground": "hsl(0 0% 98%)",
+        "border": "hsl(240 5% 15%)",
+        "input": "hsl(240 5% 15%)",
+        "ring": "hsl(72 100% 50%)"
+      }
+    }
+  },
+  "layout_strategy": {
+    "spacing_scale": "Aggressive. Use gap-8 and p-8 as default for containers. Dense gap-4 for data grids.",
+    "container_style": "Fluid width with max-w-7xl. Centered.",
+    "grid_system": "Bento Grid (Mode A) for Landing, High Density (Mode B) for Dashboard.",
+    "border_radius": "Rounded-md (6px) for a technical feel. Avoid large pill shapes for containers."
+  },
+  "components": {
+    "buttons": {
+      "primary": "Solid #CCFF00 text-black, font-mono, uppercase, tracking-wider, sharp corners or slightly rounded (rounded-sm). Hover: Brighten.",
+      "secondary": "Border 1px solid #333, bg-transparent, text-white. Hover: bg-white/10."
+    },
+    "cards": {
+      "style": "Flat background (bg-card), 1px border (border-border), no shadow. On hover: border-primary/50 transition-colors duration-300.",
+      "content_padding": "p-6"
+    },
+    "charts": {
+      "library": "Recharts (via Shadcn Chart)",
+      "style": "Minimalist. Hide grid lines if possible. Use gradients for areas."
+    },
+    "inputs": {
+      "style": "bg-secondary/50 border-transparent focus:border-primary focus:ring-1 focus:ring-primary height-12 text-lg font-mono placeholder:text-muted-foreground/50"
+    }
+  },
+  "visual_enhancers": {
+    "grid_background": "Use a background grid pattern: `bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:24px_24px]`",
+    "glowing_borders": "For high-score cards, use a pseudo-element glow or a moving gradient border.",
+    "ascii_art": "Use ASCII art for the 404 page or empty states (e.g., an ASCII trophy for 100% score)."
+  },
+  "images": {
+    "hero_background": {
+      "url": "https://images.unsplash.com/photo-1762279389006-43963a0cee55?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2Mzl8MHwxfHNlYXJjaHwyfHxmdXR1cmlzdGljJTIwYWJzdHJhY3QlMjBkaWdpdGFsJTIwZGF0YSUyMGZsb3clMjBuZW9uJTIwZGFyayUyMGJhY2tncm91bmR8ZW58MHx8fHwxNzcxMDAwMzk4fDA&ixlib=rb-4.1.0&q=85",
+      "alt": "Abstract Neon Data Flow",
+      "usage": "Hero Section Background with heavy overlay (bg-black/80)."
+    },
+    "feature_coding": {
+      "url": "https://images.unsplash.com/photo-1562034475-0292da13283a?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2NDF8MHwxfHNlYXJjaHw0fHxkZXZlbG9wZXIlMjBjb2RpbmclMjBzZXR1cCUyMGRhcmslMjByb29tJTIwbmVvbiUyMGxpZ2h0c3xlbnwwfHx8fDE3NzEwMDAzOTl8MA&ixlib=rb-4.1.0&q=85",
+      "alt": "Developer Coding Setup",
+      "usage": "Landing Page Feature Section - 'How it works'."
+    }
+  },
+  "motion": {
+    "page_transition": "Opacity fade + slight Y-axis slide (10px).",
+    "hover_effects": "Instant color change (duration-150), no bouncy scale effects.",
+    "loading_state": "Blinking cursor '_' animation instead of spinner."
+  },
+  "instructions_to_main_agent": [
+    "1. UPDATE `tailwind.config.js`: Replace the existing `colors` object in `theme.extend` with the `tailwind_config_extension.colors` provided above. Ensure `darkMode: 'class'` is preserved.",
+    "2. INSTALL FONTS: Add the Google Fonts import to `src/index.css` at the very top. Update `body` rule to use `Manrope`. Update `h1, h2, h3, h4, h5, h6` rules to use `JetBrains Mono`.",
+    "3. GLOBAL STYLES: Add the 'grid_background' CSS to the `body` or a global wrapper in `App.css` to give the whole app a texture.",
+    "4. COMPONENT OVERRIDES: When using Shadcn Card, force `bg-card` and `border-border`. Do not use default white backgrounds.",
+    "5. DASHBOARD LAYOUT: Use a CSS Grid for the dashboard: `grid grid-cols-1 md:grid-cols-3 gap-6`. Place the 'Score' in a large card (`col-span-1 md:col-span-1`), 'Activity' in a wide card (`col-span-2`), and 'Recommendations' in a tall list (`row-span-2`).",
+    "6. ICONS: Use `lucide-react` (Code, GitBranch, Star, AlertTriangle, CheckCircle, Terminal).",
+    "7. DO NOT use gradients for text. Keep text solid White or Muted Gray for readability."
+  ],
+  "UNIVERSAL_GUIDELINES_FOR_MAIN_AGENT": [
+    "Dark colors look good when used independently without gradients. DO NOT use dark colors as gradients",
+    "Don't make generic centered layouts, simplistic gradients, and uniform styling.",
+    "Create depth through layered design elements with z-index hierarchy",
+    "You MUST NOT apply universal transition. Eg: `transition: all`. This results in breaking transforms. Always add transitions for specific interactive elements like button, input excluding transforms",
+    "You MUST NOT center align the app container, ie do not add `.App { text-align: center; }` in the css file. This disrupts the human natural reading flow of text",
+    "Always use modern button styles like pill-shaped, or sharp button with interaction animations & color relevant to the app style",
+    "NEVER: use AI assistant Emoji characters like 🤖🧠 etc for icons.",
+    "Every interaction needs micro-animations - hover states, transitions, entrance animations. Static = dead.",
+    "Use 2-3x more spacing than feels comfortable. Cramped designs look cheap.",
+    "Prioritize using pre-existing components from src/components/ui when applicable",
+    "Components MUST use named exports (export const ComponentName = ...)",
+    "Pages MUST use default exports (export default function PageName() {...})",
+    "Use `sonner` for toasts located in `/app/frontend/src/components/ui/sonner.jsx`"
+  ]
+}
+

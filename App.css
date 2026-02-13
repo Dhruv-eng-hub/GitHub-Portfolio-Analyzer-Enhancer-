@@ -1,0 +1,46 @@
+.App {
+  min-height: 100vh;
+}
+
+.score-glow {
+  position: relative;
+}
+
+.score-glow::before {
+  content: '';
+  position: absolute;
+  inset: -2px;
+  background: linear-gradient(45deg, hsl(72 100% 50%), hsl(240 100% 50%), hsl(72 100% 50%));
+  border-radius: inherit;
+  opacity: 0;
+  transition: opacity 0.3s;
+  z-index: -1;
+  filter: blur(8px);
+}
+
+.score-glow:hover::before {
+  opacity: 0.6;
+}
+
+.stat-card {
+  transition: border-color 0.3s ease, transform 0.2s ease;
+}
+
+.stat-card:hover {
+  border-color: hsl(72 100% 50% / 0.5);
+  transform: translateY(-2px);
+}
+
+.recommendation-item {
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+.recommendation-item::before {
+  content: '>';
+  position: absolute;
+  left: 0;
+  color: hsl(72 100% 50%);
+  font-family: 'JetBrains Mono', monospace;
+  font-weight: bold;
+}
